@@ -24,7 +24,7 @@ namespace proyectoIngles
             /*
              
              */
-            DataTable myDT;
+            DataTable myDT = new DataTable();
             if (tiempo==0) {
             myDT=da.fillDataTable("SELECT * FROM presente");
             }
