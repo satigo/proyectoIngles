@@ -13,9 +13,23 @@ namespace proyectoIngles
 {
     public partial class frm_Main : DevExpress.XtraEditors.XtraForm
     {
+        DataAccess da = new DataAccess();
         public frm_Main()
         {
             InitializeComponent();
+        }
+
+        DataTable getData(char tipo, int tiempo)
+        {
+            /*
+             
+             */
+            DataTable myDT;
+            if (tiempo==0) {
+            myDT=da.fillDataTable("SELECT * FROM presente");
+            }
+
+            return myDT;
         }
     }
 }
